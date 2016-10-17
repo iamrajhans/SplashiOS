@@ -27,10 +27,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="14W-1R-0bl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="3SU-h6-2Eo"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="14W-1R-0bl" secondAttribute="bottom" constant="285" id="4Sr-Mf-7nV"/>
-                            <constraint firstItem="14W-1R-0bl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="249" id="eUG-xe-rcE"/>
-                            <constraint firstAttribute="trailing" secondItem="14W-1R-0bl" secondAttribute="trailing" constant="248" id="mWd-NF-RzB"/>
+                            <constraint firstItem="14W-1R-0bl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFG-4D-f5h"/>
+                            <constraint firstItem="14W-1R-0bl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vJ0-WD-04z"/>
                         </constraints>
                     </view>
                 </viewController>
