@@ -21,11 +21,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func fireNotificationButton(sender: AnyObject) {
+    }
+    
     func localnotification(){
-        let notfy = UILocalNotification()
+        
+        let date = NSDate()
+        let dateComponent = NSDateComponents()
+        dateComponent.second = 5
+        let calendar = NSCalendar.currentCalendar()
+        let firedate:NSDate = calendar.dateByAddingComponents(dateComponent, toDate: date, options: NSCalendarOptions.init(rawValue: 1))!
+        let notfy:UILocalNotification  = UILocalNotification()
         notfy.alertBody = "Hi this local notification"
         notfy.alertTitle = "Title"
-        notfy.alertAction = "Open"
+        notfy.fireDate = firedate
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notfy)
+        
+        
         
         
     }
