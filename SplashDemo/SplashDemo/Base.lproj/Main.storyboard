@@ -16,7 +16,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14W-1R-0bl">
+                                <rect key="frame" x="249" y="285" width="103" height="30"/>
+                                <state key="normal" title="fire notification"/>
+                                <connections>
+                                    <action selector="fireNotificationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wo-aR-zDX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="14W-1R-0bl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="3SU-h6-2Eo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="14W-1R-0bl" secondAttribute="bottom" constant="285" id="4Sr-Mf-7nV"/>
+                            <constraint firstItem="14W-1R-0bl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="249" id="eUG-xe-rcE"/>
+                            <constraint firstAttribute="trailing" secondItem="14W-1R-0bl" secondAttribute="trailing" constant="248" id="mWd-NF-RzB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
