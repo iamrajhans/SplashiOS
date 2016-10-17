@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        localnotification()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func localnotification(){
+        let notfy = UILocalNotification()
+        notfy.alertBody = "Hi this local notification"
+        notfy.alertTitle = "Title"
+        notfy.alertAction = "Open"
+        
+        
+    }
 
 }
 
